@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Socialico;
+    src: url('Socialico-Regular.eot'), url('Socialico-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: Socialico-plus;
+    src: url('SocialicoPlus-Plus.eot'), url('SocialicoPlus-Plus.woff') format('woff');
+}
+body {
+    margin: auto 0;
+}
+.zone {
+    padding: 1rem 0.3rem;
+}
+.nav-elements {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+    color: #f5f5f6;
+    padding: 20px;
+}
+.right {
+    margin-left: auto;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 6% 25% 0px 25%; */
+    height: 50vh;
+}
+.nav-bar {
+    background-color: #444;
+}
+.cover {
+    width: 15rem;
+}
+.grid-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.box > img{
+    width: 100%;
+    transition: all 0.2s linear;
+}
+.box {
+    background-color: #444;
+    padding: 65px;
+    margin: 5px;
+    transition: all 0.3s linear;
+}
+.box:hover {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+.box > img:hover {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.footer {
+    background-color: #444;
+}
+.footer-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.footer-links > li.reg-icons {
+    font-family: 'Socialico';
+    font-size: 2rem;
+}
+.footer-links > li.plus {
+    font-family: 'Socialico-plus';
+    font-size: 2rem;
+}
+.left {
+    margin-right: auto;
+    color: #f5f5f6;
+}
+.black {
+    background-color: rgba(117, 115, 115, 0.788);
+}
+@media only screen and (max-width: 425px) {
+    .nav-elements {
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .footer-links {
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .footer-links > li.reg-icons {
+        font-family: 'Socialico';
+        font-size: 0.75rem;
+    }
+    .footer-links > li.plus {
+        font-family: 'Socialico-plus';
+        font-size: 0.75rem;
+    }
+}

@@ -110,4 +110,13 @@ a {
         font-family: 'Socialico-plus';
         font-size: 0.75rem;
     }
+    .cover {
+        width: 10rem;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .cover {
+        width: 6rem;
+        padding-top: 1.25em;
+    }
 }
